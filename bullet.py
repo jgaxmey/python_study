@@ -8,7 +8,7 @@ class Bullet(Sprite):
         super().__init__()
         self.screen = ai_game.screen
         self.settings = ai_game.settings
-        self.color = self.settings.buller_color
+        self.color = self.settings.bullet_color
         #在0，0处创建一个子弹
         self.rect = pygame.Rect(0,0,self.settings.buller_width,self.settings.bullet_height)
         self.rect.midtop = ai_game.ship.rect.midtop
